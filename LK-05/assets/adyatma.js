@@ -166,7 +166,7 @@ form.addEventListener("submit", function (e) {
           confirmButtonText: "OK",
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location.href = "index.html";
+            window.location.href = "https://adyatma86.github.io/LK-06/";
           }
         });
       });
