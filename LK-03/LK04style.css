@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lavishly+Yours&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #38bdf8, #6366f1);
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2px 1%;
+  color: white;
+  background-color: rgba(18, 16, 38, 0.8);
+  backdrop-filter: blur(1px);
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.logo .agomo {
+  display: none;
+}
+
+.logo h1 {
+  font-family: "Lavishly Yours";
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  background-clip: text;
+  color: transparent;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #38bdf8;
+}
+
+/*.adyatma */
+.adyatma {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  border-radius: 20px;
+}
+
+.adyatma h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.adyatma p {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.adyatma button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.adyatma button:hover {
+  transform: scale(1.05);
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  gap: 30px;
+}
+/* akuganteng */
+.akuganteng {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.akuganteng:hover {
+  transform: translateY(-5px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(270deg, #38bdf8, #6366f1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f172a;
+  color: white;
+  margin-top: 40px;
+}
+
+footer p {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 768px) {
+  .logo .agomo {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .adyatma h2 {
+    font-size: 30px;
+  }
+
+  .adyatma {
+    padding: 60px 15px;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .adyatma {
+    padding: 60px 15px;
+    margin-top: 4rem;
+  }
+
+  .adyatma h2 {
+    font-size: 26px;
+  }
+}
+

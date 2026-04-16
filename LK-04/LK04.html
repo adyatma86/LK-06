@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LK 04</title>
+    <link rel="icon" type="image/png" href="assets/2.png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- ini header -->
+    <header>
+        <div class="navbar">
+            <div class="nav-container">
+
+                <div class="logoA">
+                    <img src="assets/2.png" alt="Logo Adyatma">
+                    <h1 class="logo-title" data-text="Adyatma">Adyatma</h1>
+                </div>
+                <button class="hamburger" aria-label="Buka menu navigasi" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="#tentang">Tentang</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#proyek">Proyek</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                        <li><a href="https://adyatma86.github.io/LK-04/" target="_blank">Github</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="hero">
+            <img src="assets/p.jpeg" alt="Foto profil Adyatma">
+            <p>Mahasiswa | Pagar Nusa | <span class="gonta-ganti"></span></p>
+        </div>
+    </header>
+
+    <!-- ini konten utamanya -->
+    <main>
+        <!-- ini section deskripsi -->
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <article>
+                <p>
+                    Saya adalah seorang mahasiswa ITSK dr. Soepraoen Malang yang memiliki minat
+                    di bidang desain antarmuka, pengalaman pengguna, dan pengembangan website.
+                    Saya senang mempelajari hal-hal baru serta terus mengembangkan kemampuan
+                    dalam dunia teknologi dan desain digital.
+                </p>
+            </article>
+        </section>
+
+        <!-- ini section artikel -->
+        <section id="skill">
+            <h2>Keahlian</h2>
+            <div class="skill-container">
+                <article>
+                    <h3>UI/UX</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>User Research</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript Dasar</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Canva</li>
+                        <li>Git Dasar</li>
+                        <li>Google Fonts & Assets</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="proyek">
+            <h2>Proyek</h2>
+            <div class="proyek-container">
+                <article>
+                    <h3>Desain UI Aplikasi</h3>
+                    <p>Membuat rancangan antarmuka aplikasi yang sederhana, modern, dan mudah digunakan.</p>
+                </article>
+                <article>
+                    <h3>Website Portofolio</h3>
+                    <p>Membangun website pribadi untuk menampilkan profil, keahlian, dan proyek yang pernah dibuat.</p>
+                </article>
+                <article>
+                    <h3>Landing Page Produk</h3>
+                    <p>Merancang dan mengembangkan landing page dengan tampilan menarik dan responsif.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ini section form -->
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <div class="kontak-container">
+                <article>
+                    <div class="email">
+                        <p>Email:</p>
+                        <p>adyatma15@gmail.com</p>
+                    </div>
+                    <div class="email">
+                        <p>Instagram:</p>
+                        <p>@adyatma86</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="form">
+            <h2>Form Pendaftaran</h2>
+            <form action="#" method="post">
+
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Masukkan email aktif" required><br><br>
+
+                <label for="hp">No HP:</label><br>
+                <input type="tel" id="hp" name="hp" placeholder="Masukkan nomor HP" required><br><br>
+
+                <label for="kategori">Kategori:</label><br>
+                <select id="kategori" name="kategori" required>
+                    <option value="">Pilih kategori</option>
+                    <option value="web">Web Development</option>
+                    <option value="uiux">UI/UX Design</option>
+                    <option value="lainnya">Lainnya</option>
+                </select><br><br>
+
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini"
+                    required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ini footer atau bagian paling bawah -->
+    <footer>
+        <p>&copy; 2026 Adyatma. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const h1 = document.querySelector(".logoA h1");
+        const cuy = document.querySelector(".logoA");
+        const cay = document.querySelector("nav ul");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+                h1.classList.add("scrolled1");
+                cuy.classList.add("scrolled2");
+                cay.classList.add("scrolled3");
+            } else {
+                navbar.classList.remove("scrolled");
+                h1.classList.remove("scrolled1");
+                cuy.classList.remove("scrolled2");
+                cay.classList.remove("scrolled3");
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        const typed = new Typed(".gonta-ganti", {
+            strings: ["Frontend Developer", "Backend Developer"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 1200,
+            loop: true,
+        });
+
+        // Animasi muncul saat discroll
+        const elementsToReveal = document.querySelectorAll(
+            "#tentang article, .skill-container article, .proyek-container article, .email, #form form"
+        );
+
+        elementsToReveal.forEach((el) => {
+            el.classList.add("hidden-scroll");
+        });
+
+        const revealOnScroll = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show-scroll");
+                    entry.target.classList.remove("hidden-scroll");
+                } else {
+                    entry.target.classList.add("hidden-scroll");
+                    entry.target.classList.remove("show-scroll");
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        elementsToReveal.forEach((el) => {
+            revealOnScroll.observe(el);
+        });
+
+        // Hamburger menu mobile
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector("nav ul");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+
+            const isOpen = hamburger.classList.contains("active");
+            hamburger.setAttribute("aria-expanded", isOpen);
+        });
+
+        // Tutup menu setelah klik link
+        document.querySelectorAll("nav ul li a").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+                hamburger.setAttribute("aria-expanded", "false");
+            });
+        });
+    </script>
+</body>
+
+</html>
